@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="style/style.css">
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="jquery-carousel/js/min/flickerplate.min.js" type="text/javascript"></script>
+	<link href="jquery-carousel/css/flickerplate.css"  type="text/css" rel="stylesheet">
+	</head>
+<body>
+<!-- head -->
+<div class="head">
+	<div class="cnt">
+		<button>My Art</button>
+		<button class="btn-lf">About</button>
+	</div>
+</div>
+<!-- slider -->
+<div class="flicker-example">
+	<ul>
+		<li data-background="img/001.jpg"></li>
+		<li data-background="img/002.jpg"></li>
+		<li data-background="img/004.jpg"></li>		
+	</ul>		
+</div>
+<!-- body -->
+<div class="body-cnt" id="cnt1">
+
+<div class="about">
+		<h3>About</h3> 
+		<p class="ab-p">
+			the company is all about making your life easy with everything about planning and buying the giant wheels, the smart way. A brake-free experience to find trucks in your range of utility and benefits - pulled across with a free-flowing interface based on best of research in the domain. The rare concept and unique consoles intelligently process your queries no matter what. Leaving no chance to impress you with quality
+		</p>
+
+	</div>
+
+
+<!-- form -->
+<div class="fm-cnt">
+		<form id="myForm" method="post" onsubmit="return false">
+		<h3>Don't hesitate to contact me </h3>
+		<input type="text"  placeholder="Enter your Name"  name="username" required>
+		<input type="email" required placeholder="Enter your Email" name="email">
+		<input type="url" required placeholder="Your website" name="website" title="please enter valipd email starts with https:// followed by web-address">
+		<input type="text" name="Phno" pattern="[7-9]{1}[0-9]{9}" title=" enter Phone number with 7-9 and remaing 9 digit with 0-9" placeholder="10 digit mobile no" required>
+		<input type="date" required placeholder="Date of Birth  :  " name="dob">
+		<input type="submit" value="save" class="btn">
+
+		</form>
+</div>
+	<div class="fm-details">
+	</div>
+
+
+</div>
+
+
+</body>
+<!-- to start slider -->
+	<script>
+	new flickerplate('.flicker-example');
+	</script>
+
+<script src="js/view.js"> </script>
+<script src="js/model.js"> </script>
+<script src="js/controller.js"> </script>
+<script src="js/main.js"> </script>
+</html>
